@@ -7,24 +7,56 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <div id="vue-app">
+      <div id="app-title">
+        <h1 class="ui center aligned header padding-box">Generate your memes, can you?</h1>
 
+      </div>
 
-    <div id="app-title">
-      <h1 class="ui center aligned header padding-box">Generate your memes, can you?</h1>
+      <div id="meme">
 
+        <div class="ui">
+          <p class="ui centered text header">{{current.msg1}}</p>
+          <img id="meme-image" class="ui centered image" v-bind:src="current.img">
+          <p id="meme-text" class="ui centered text header">{{current.msg2}}</p>
+        </div>
+
+      </div>
+
+      <div id="meme-form">
+
+        <div class="ui form">
+
+          <div class="three fields">
+            <!-- URL -->
+            <div class="field">
+              <label>Image URL:</label>
+              <input type="text" v-model="user_input.img">
+            </div>
+
+            <!-- TEXT -->
+            <div class="field">
+              <label>Text1:</label>
+              <input type="text" v-model="user_input.msg1">
+            </div>
+
+            <div class="field">
+              <label>Text2:</label>
+              <input type="text" v-model="user_input.msg2">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="button-container" class="text-center">
+        <button type="button" v-on:click="updateData(user_input)" class="ui primary button">Submit</button>
+      </div>
     </div>
 
-    <div id="meme">
 
-      <img class="meme-image" src="" alt="">
-      <p class="meme-tag"></p>
 
-    </div>
-
-    <div id="form">
-    </div>
-
-    <div id="button-container"></div>
 
 
     <script src="./libs/jquery.js"></script>
