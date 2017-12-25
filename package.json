@@ -1,0 +1,23 @@
+{
+  "name": "meme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avsssai/meme-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avsssai/meme-generator/issues"
+  },
+  "homepage": "https://github.com/avsssai/meme-generator#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "vue": "^2.5.13"
+  }
+}
