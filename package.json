@@ -18,6 +18,7 @@
   "homepage": "https://github.com/avsssai/meme-generator#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "semantic-ui": "^2.2.13",
     "vue": "^2.5.13"
   }
 }
